@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+}
+
+.navbar {
+  position: fixed;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 210px;
+  top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  margin-left: 210px;
+}
+
+.icon {
+  transform: scale(1.5);
+  margin-right: 20px;
+}
+
+.icons {
+  transform: scale(1.9);
+  margin-right: 20px;
+  padding-left: 2px;
+}
+
+.nav-brand {
+  margin-right: 60px;
+  display: flex;
+  padding-left: 30px;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.nav-links,
+.CPLS {
+  width: 100%;
+}
+
+.nav-links div:hover,
+.CPLS div:hover {
+  color: white;
+}
+
+.nav-links div,
+.CPLS div {
+  text-decoration: none;
+  border-radius: 7px;
+  list-style: none;
+  color: rgb(156, 154, 154);
+  margin: 2px auto;
+  width: 90%;
+  padding: 10px;
+  font-size: 0.9rem;
+  transition: 200ms linear;
+  cursor: pointer;
+  /* background-color: grey; */
+}
+
+.CPLS {
+  margin-top: 15px;
+}
+
+.CPLS {
+  font-weight: 600;
+}
+
+.fab {
+  transform: scale(2);
+  margin-right: 17px;
+}
+
+.line-br {
+  width: 80%;
+  height: 1px;
+  background-color: rgb(71, 69, 69);
+  margin: 5px auto;
+}
+
+.contentTopbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  right: 0;
+  left: 0;
+  margin-left: 210px;
+  background-color: rgb(106, 129, 112);
+}
+
+.barId {
+  display: flex;
+}
+
+.barId div {
+  margin: 0 20px;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+}
+
+.pill1 {
+  padding: 10px 40px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: small;
+  font-weight: 600;
+}
+
+.pill2 {
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-user-circle {
+  transform: scale(1.7);
+  padding-left: 6px;
+  color: grey;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.fa-caret-down {
+  padding-right: 6px;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.fa-chevron-circle-left,
+.fa-chevron-circle-right {
+  transform: scale(1.9);
+  margin: 0 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.arrows {
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+}
+
+/* .content */
+
+/* margin-left: 210px; */
