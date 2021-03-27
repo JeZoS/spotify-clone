@@ -4,6 +4,7 @@
   bottom: 0;
   background-color: rgb(27, 26, 26);
   width: 100%;
+  min-width: 600px;
   color: white;
   justify-content: space-between;
   align-items: center;
