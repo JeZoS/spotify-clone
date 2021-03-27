@@ -30,7 +30,9 @@ const Navbar = () => {
       </div>
       <div className="line-br"></div>
       <div className="install-now">
-        <h6>Install Now</h6>
+        <h6>
+          Install App <i className="fas fa-download"></i>{" "}
+        </h6>
       </div>
     </nav>
   );
