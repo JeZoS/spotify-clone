@@ -22,6 +22,9 @@
 .content {
   flex: 1;
   margin-left: 210px;
+  background-image: linear-gradient(grey, black 50%);
+  height: 100%;
+  padding-bottom: 100px;
 }
 
 .icon {
@@ -65,7 +68,6 @@
   font-size: 0.9rem;
   transition: 200ms linear;
   cursor: pointer;
-  /* background-color: grey; */
 }
 
 .CPLS {
@@ -96,7 +98,7 @@
   right: 0;
   left: 0;
   margin-left: 210px;
-  background-color: rgb(106, 129, 112);
+  background-color: grey;
 }
 
 .barId {
@@ -126,8 +128,8 @@
 }
 
 .fa-user-circle {
-  transform: scale(1.7);
-  padding-left: 6px;
+  transform: scale(1.8);
+  padding-left: 8.5px;
   color: grey;
   margin-right: 15px;
   cursor: pointer;
@@ -144,16 +146,163 @@
 .fa-chevron-circle-right {
   transform: scale(1.9);
   margin: 0 15px;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 
 .arrows {
-  /* background-color: blue; */
   display: flex;
   align-items: center;
 }
 
-/* .content */
+.content {
+  padding-left: 35px;
+}
 
-/* margin-left: 210px; */
+.goodMorning {
+  margin-top: 80px;
+}
+
+.goodMorning h1 {
+  font-weight: 700;
+  color: white;
+}
+
+.morning-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.morning-divs {
+  display: flex;
+  box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: rgba(115, 118, 115, 0.2);
+  color: white;
+  width: 35%;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 10px 11px 10px 0;
+  height: 10vw;
+  min-height: 70px;
+  align-items: center;
+  max-height: 80px;
+  overflow: hidden;
+}
+
+.morning-divs img {
+  object-fit: cover;
+  width: 30%;
+  height: 100%;
+}
+
+.morning-divs h2 {
+  margin-left: 15px;
+  font-size: 1rem;
+}
+
+.recent-container {
+  display: flex;
+}
+
+.recent-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  line-break: auto;
+  max-width: 200px;
+  min-width: 180px;
+  margin: 5px 20px 15px 0;
+  border-radius: 5px;
+  background-color: rgba(225, 225, 225, 0.1);
+  color: white;
+}
+
+.recent-card img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+.recent-card h4,
+.recent-card p {
+  margin: 0;
+}
+
+.recent-card p {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+h1 {
+  color: white;
+}
+
+.recentlyPlayed {
+  margin-top: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: white;
+}
+
+.hidden {
+  color: black;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+}
+
+@media screen and (min-width: 801px) {
+  .hidden {
+    display: none;
+  }
+}
+
+.pill1 {
+  padding: 10px 40px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: small;
+  font-weight: 600;
+}
+
+.pill2 {
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .pill1,
+  .pill2 {
+    display: none;
+  }
+}
+
+.install-now {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  padding-bottom: 75px;
+}
+
+.install-now h6 {
+}
+
+.more {
+  margin-top: 25px;
+}

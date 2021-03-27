@@ -14,6 +14,7 @@ const ContentTopBar = () => {
           Prabhat Kumar{" "}
           <i className="fas fa-caret-down"></i>
         </div>
+        <i className="fas hidden fa-user-circle"></i>
       </div>
     </div>
   );

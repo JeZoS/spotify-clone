@@ -29,6 +29,9 @@ const Navbar = () => {
         </div>
       </div>
       <div className="line-br"></div>
+      <div className="install-now">
+        <h6>Install Now</h6>
+      </div>
     </nav>
   );
 };
