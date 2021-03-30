@@ -5,6 +5,8 @@ import axios from "axios";
 const GoodMorning = ({ token }) => {
   const [categories, setCategories] = useState([]);
 
+  var now = new Date();
+  console.log(now.getHours());
   useEffect(() => {
     const url =
       "https://api.spotify.com/v1/browse/categories?limit=5";
@@ -27,7 +29,13 @@ const GoodMorning = ({ token }) => {
 
   return (
     <div className="goodMorning">
-      <h1>Good Morning</h1>
+      <h1>
+        {now.getHours() <= 12
+          ? "Good Morning"
+          : now.getHours() <= 16
+          ? "Good Afternoon"
+          : "Good Evening"}
+      </h1>
       <div className="morning-container">
         {categories.length > 0 &&
           categories.map((category, idx) => (
