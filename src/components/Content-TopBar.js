@@ -2,7 +2,10 @@ import React from "react";
 
 const ContentTopBar = () => {
   return (
-    <div className="contentTopbar">
+    <div
+      className="contentTopbar"
+      style={{ zIndex: "100" }}
+    >
       <div className="arrows">
         <i className="fas fa-chevron-circle-left"></i>
         <i className="fas fa-chevron-circle-right"></i>

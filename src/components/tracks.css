@@ -23,7 +23,6 @@
 
 .track-details {
   display: flex;
-  z-index: 10;
   flex-direction: column;
   padding: 20px 20px 20px 0;
   justify-content: flex-end;
@@ -55,7 +54,7 @@
 }
 
 .track-tables {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   color: rgb(175, 175, 175);
 }
 
@@ -68,6 +67,7 @@
   font-weight: 100;
   padding-left: 15px;
   padding-bottom: 15px;
+  border-bottom: 1px solid grey;
 }
 
 .track-tables table tbody tr td {
@@ -83,4 +83,25 @@
 tr img {
   height: 40px;
   margin-right: 10px;
+}
+
+.play-heart-dots {
+  color: white;
+  padding-left: 10px;
+}
+
+.play-heart-dots i {
+  transform: scale(1.5);
+  margin: 40px 35px;
+}
+
+.play-heart-dots .fa-heart {
+  color: white;
+  margin-left: 5px;
+  margin-right: 0px;
+}
+
+.play-heart-dots .fa-play-circle {
+  transform: scale(3);
+  color: rgb(143, 255, 143);
 }

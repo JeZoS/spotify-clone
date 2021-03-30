@@ -18,6 +18,11 @@ const Tracks = ({ tracks }) => {
           </p>
         </div>
       </div>
+      <div className="play-heart-dots">
+        <i className="fas fa-play-circle"></i>
+        <i className="fas fa-heart"></i>
+        <i className="fas fa-random"></i>
+      </div>
       <div className="track-tables">
         <table>
           <thead>
