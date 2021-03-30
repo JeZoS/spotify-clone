@@ -4,8 +4,8 @@ const ContentTopBar = () => {
   return (
     <div className="contentTopbar">
       <div className="arrows">
-        <i class="fas fa-chevron-circle-left"></i>
-        <i class="fas fa-chevron-circle-right"></i>
+        <i className="fas fa-chevron-circle-left"></i>
+        <i className="fas fa-chevron-circle-right"></i>
       </div>
       <div className="barId">
         <div className="pill1">UPGRADE</div>
