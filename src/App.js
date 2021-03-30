@@ -72,7 +72,6 @@ function App() {
       .then((response) => {
         console.log(response.data.access_token);
         getNewReleases(response.data.access_token);
-        // getFeatured(response.data.access_token);
         setToken(response.data.access_token);
         setLoading(false);
       })

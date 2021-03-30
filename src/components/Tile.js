@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from "react";
 
-const Tile = ({ category, token }) => {
+const Tile = ({ category, token, setTile }) => {
   const onClick = () => {
     const url = `${category.href}/playlists?limit=5`;
     const config = {
@@ -12,7 +12,8 @@ const Tile = ({ category, token }) => {
     axios
       .get(url, config)
       .then((response) => {
-        console.log(response.data);
+        console.log(response.data.playlists.items);
+        setTile(response.data.playlists.items);
       })
       .catch((err) => {
         console.log(err);

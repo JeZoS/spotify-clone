@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import Tile from "./Tile";
 import axios from "axios";
 
-const GoodMorning = ({ token }) => {
+const GoodMorning = ({ token, setTile }) => {
   const [categories, setCategories] = useState([]);
 
   var now = new Date();
-  console.log(now.getHours());
   useEffect(() => {
     const url =
       "https://api.spotify.com/v1/browse/categories?limit=5";
@@ -43,6 +42,7 @@ const GoodMorning = ({ token }) => {
               key={idx}
               category={category}
               token={token}
+              setTile={setTile}
             />
           ))}
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar" style={{ zIndex: "10" }}>
       <div className="nav-brand">
         <i className="fab fa-spotify"></i>
         <h3>Spotify</h3>

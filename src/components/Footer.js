@@ -3,7 +3,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" style={{ zIndex: 11 }}>
       <div className="playing">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP1pCGqFmgfxRdyCZt4yDqVxX1pftB_E3QOw&usqp=CAU"
